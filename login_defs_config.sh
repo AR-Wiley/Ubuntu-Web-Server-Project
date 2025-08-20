@@ -1,6 +1,4 @@
-  
 #!/bin/bash
-
 
 path="/etc/login.defs"
 
@@ -14,8 +12,6 @@ declare -A configs=(
         [LOGIN_RETRIES]=3
 )
 
-# echo "${configs[LOGIN_TIMEOUT]}"
-
 for i in "${values[@]}"; do
 
         if grep -q "^${i}" "$path"; then
@@ -24,8 +20,4 @@ for i in "${values[@]}"; do
                 echo "${i} ${configs[$i]}" >> "$path"
         fi
 done
-
-
-
-
 
