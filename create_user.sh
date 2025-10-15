@@ -25,7 +25,7 @@ Add-User() {
         fi
 
         if ! useradd -m -c "User: $username" "$username"; then
-                echo "Failed to creat user."
+                echo "Failed to create user."
                 exit 1
         fi
 
@@ -41,3 +41,4 @@ Add-User() {
 
 
 Add-User "$1"
+
