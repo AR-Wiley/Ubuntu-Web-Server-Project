@@ -76,3 +76,8 @@ php_package_install() {
         done
 }
 
+update
+apache_install
+php_install
+php_package_install
+
