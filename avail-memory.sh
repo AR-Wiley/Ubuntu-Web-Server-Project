@@ -19,7 +19,6 @@ Avail-Memory() {
                 date '+%Y-%m-%d %H:%M:%S'
         }
 
-
         AVAIL=$(free -m | awk 'NR==2 {print $7}')
         MINIMIUM=1024
 
@@ -30,10 +29,10 @@ Avail-Memory() {
         free -m >> "$file_path"
 
         echo "$(timestamp)" >> "$file_path"
-
 }
 
 Avail-Memory
+
 
 
 
