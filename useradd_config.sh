@@ -5,7 +5,6 @@ if [[ $EUID -ne 0 ]]; then
         exit 1
 fi
 
-
 path="/etc/default/useradd"
 
 values=('HOME' 'INACTIVE' 'EXPIRE' 'SKEL' 'CREATE_MAIL_SPOOL')
@@ -26,3 +25,4 @@ for i in "${values[@]}"; do
                 echo "${i} ${configs[$i]}" >> "$path"
         fi
 done
+
