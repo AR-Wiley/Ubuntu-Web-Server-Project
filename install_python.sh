@@ -15,7 +15,6 @@ update() {
         fi
 
         echo "Upgrade Completed"
-
 }
 
 install_python() {
@@ -37,7 +36,6 @@ install_python() {
                 python3 --version
         fi
 
-
         if [[ -x $pip_path ]]; then
                 echo "Python Pip is installed"
                 pip3 --version
@@ -53,7 +51,6 @@ install_python() {
         fi
 
 }
-
 
 install_update
 install_python
