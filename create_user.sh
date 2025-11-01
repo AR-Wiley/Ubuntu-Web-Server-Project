@@ -5,7 +5,6 @@ if [[ $EUID -ne 0 ]]; then
         exit 1
 fi
 
-
 Add-User() {
 
         local username="$1"
@@ -38,7 +37,6 @@ Add-User() {
         echo "User '$username' password is: $password"
 }
 
-
-
 Add-User "$1"
+
 
